@@ -35,3 +35,4 @@ Open [http://localhost:8000](http://localhost:8000) in a browser. You can also o
 
 `index.html` contains the page content, `styles.css` controls the layout and themes, and `script.js` handles theme switching, project previews, and email copying. Images and the background video are stored in `asset/`.
 # JLPortfolio
+# JLPortfolio
