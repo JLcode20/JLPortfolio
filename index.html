@@ -4,33 +4,40 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Justine Lance | Portfolio</title>
-<link rel="icon" type="image/png" href="JL.png">
+<link rel="icon" type="image/png" href="asset/Pictures/JL.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Figtree:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
-    <source src="vecteezy_glowing-circuit-board-lines-animation-abstract-technology_46886569.mp4" type="video/mp4">
+    <source src="asset/vecteezy_glowing-circuit-board-lines-animation-abstract-technology_46886569.mp4" type="video/mp4">
   </video>
 
 <header class="bar">
   <div class="wrap">
-    <span class="mark"><b>J1</b> / PORTFOLIO</span>
+    <span class="mark"><b>JUSTINE </b> | PORTFOLIO</span>
     <div class="right">
       <nav aria-label="Sections">
         <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
       </nav>
-      <button class="toggle" id="themeBtn" type="button" aria-label="Switch between light and dark theme"><span class="dot"></span><span id="themeLabel">Dark</span></button>
+      <div class="header-actions">
+        <a class="header-icon" href="#projects" aria-label="Browse projects" title="Browse projects"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 4.2 4.2"></path></svg></a>
+        <button class="toggle header-icon" id="themeBtn" type="button" aria-label="Switch between light and dark theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.7"></circle><path d="M12 2.4v2.1m0 15v2.1m9.6-9.6h-2.1m-15 0H2.4m16.4-6.8-1.5 1.5M6.7 17.3l-1.5 1.5m13.6 0-1.5-1.5M6.7 6.7 5.2 5.2"></path></svg><span class="sr-only" id="themeLabel">Dark</span></button>
+      </div>
     </div>
   </div>
 </header>
 
 <main class="wrap">
   <div class="hero">
-    <div>
-      <div class="refdes">Embedded Systems · PCB Design</div>
-      <h1>Justine Lance F. Cutiongco</h1>
-      <p class="lede">4th-year Computer Engineering student at ICCT College, passionate about embedded systems, firmware development, and PCB design. Skilled in microcontroller programming, circuit analysis, and board layout.</p>
+    <div class="hero-grid">
+      <img class="profile-photo" src="asset/Pictures/JL-ID.png" alt="Justine Lance Cutiongco portrait">
+      <div class="hero-copy">
+        <div class="refdes">Embedded Systems · PCB Design</div>
+        <h1>Justine Lance F. Cutiongco</h1>
+        <p class="lede">4th-year Computer Engineering student at ICCT College, passionate about embedded systems, firmware development, and PCB design. Skilled in microcontroller programming, circuit analysis, and board layout.</p>
+      </div>
+    </div>
   </div>
 
   <section id="about">
@@ -55,17 +62,17 @@
       <thead><tr><th>Ref</th><th>Project</th><th>What it does</th><th>Stack</th></tr></thead>
       <tbody>
         <tr>
-          <td class="id"><button class="project-ref project-preview-btn" type="button" data-title="UV LED Arduino Shield" data-image="UV-Timer.png" aria-label="Show UV LED Arduino Shield image" aria-haspopup="dialog" aria-expanded="false" aria-controls="projectImageModal">P1</button></td><td class="name">UV LED Arduino Shield</td>
+          <td class="id"><button class="project-ref project-preview-btn" type="button" data-title="UV LED Arduino Shield" data-image="asset/Pictures/UV-Timer.png" aria-label="Show UV LED Arduino Shield image" aria-haspopup="dialog" aria-expanded="false" aria-controls="projectImageModal">P1</button></td><td class="name">UV LED Arduino Shield</td>
           <td>One-layer board for controlling UV LEDs timer with an Arduino.</td>
           <td><span class="tag">Arduino Uno R3 clone</span><span class="tag">C++</span><span class="tag">KiCad</span><span class="tag">I2C</span></td>
         </tr>
         <tr>
-          <td class="id"><button class="project-ref project-preview-btn" type="button" data-title="UV daughter board" data-image="UV-D.png" aria-label="Show UV daughter board image" aria-haspopup="dialog" aria-expanded="false" aria-controls="projectImageModal">P2</button></td><td class="name">UV daughter board</td>
+          <td class="id"><button class="project-ref project-preview-btn" type="button" data-title="UV daughter board" data-image="asset/Pictures/UV-D.png" aria-label="Show UV daughter board image" aria-haspopup="dialog" aria-expanded="false" aria-controls="projectImageModal">P2</button></td><td class="name">UV daughter board</td>
           <td>One-layer board for buttons, potentiometer displaying menus and timers.</td>
           <td><span class="tag">Buttons</span><span class="tag">KiCad</span><span class="tag">Potentiometer</span></td>
         </tr>
         <tr>
-          <td class="id"><button class="project-ref project-preview-btn" type="button" data-title="ESP32 RGB control" data-image="LED-strip.png" aria-label="Show ESP32 RGB control image" aria-haspopup="dialog" aria-expanded="false" aria-controls="projectImageModal">P3</button></td><td class="name">ESP32 RGB control</td>
+          <td class="id"><button class="project-ref project-preview-btn" type="button" data-title="ESP32 RGB control" data-image="asset/Pictures/LED-strip.png" aria-label="Show ESP32 RGB control image" aria-haspopup="dialog" aria-expanded="false" aria-controls="projectImageModal">P3</button></td><td class="name">ESP32 RGB control</td>
           <td>Personal project for controlling RGB LEDs strip with an ESP32.</td>
           <td><span class="tag">ESP32</span><span class="tag">WEB AP</span><span class="tag">PWM</span></td>
         </tr>
@@ -80,7 +87,7 @@
 
   <dialog class="project-modal" id="projectImageModal" aria-labelledby="projectImageCaption">
     <button class="project-modal-close" id="projectImageClose" type="button" aria-label="Close image">&times;</button>
-    <img id="projectImagePreview" src="UV-Timer.png" alt="UV LED Arduino Shield board">
+    <img id="projectImagePreview" src="asset/Pictures/UV-Timer.png" alt="UV LED Arduino Shield board">
     <p id="projectImageCaption">UV LED Arduino Shield</p>
   </dialog>
 
@@ -107,7 +114,7 @@
         <tr><td class="k">Email</td><td><span id="emailText">cutiongcoj@gmail.com</span><button class="copy" id="copyBtn" type="button">Copy</button></td></tr>
         <tr>
           <td class="k">Social</td>
-          <td class="contact-links"><a href="https://github.com/JLcode20" target="_blank" rel="noopener" class="contact-link"><img src="Github-icon.svg" alt="GitHub" aria-label="GitHub"></a><a href="https://www.linkedin.com/in/justine-lance-cutiongco-9425b5278/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUtNh9%2F4OQdWeqVkKqc%2FQfw%3D%3D" target="_blank" rel="noopener" class="contact-link"><img src="linkedin-logo.png" alt="LinkedIn" aria-label="LinkedIn"></a><a href="https://www.facebook.com/JL.Cutiongco" target="_blank" rel="noopener" class="contact-link"><img src="Facebook_Logo_2023.png" alt="Facebook" aria-label="Facebook"></a></td>
+          <td class="contact-links"><a href="https://github.com/JLcode20" target="_blank" rel="noopener" class="contact-link"><img src="asset/Pictures/Github-icon.svg" alt="GitHub" aria-label="GitHub"></a><a href="https://www.linkedin.com/in/justine-lance-cutiongco-9425b5278/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BUtNh9%2F4OQdWeqVkKqc%2FQfw%3D%3D" target="_blank" rel="noopener" class="contact-link"><img src="asset/Pictures/linkedin-logo.png" alt="LinkedIn" aria-label="LinkedIn"></a><a href="https://www.facebook.com/JL.Cutiongco" target="_blank" rel="noopener" class="contact-link"><img src="asset/Pictures/Facebook_Logo_2023.png" alt="Facebook" aria-label="Facebook"></a></td>
         </tr>
       </tbody>
     </table></div>
