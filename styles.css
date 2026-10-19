@@ -73,7 +73,29 @@ nav a:hover { color: var(--accent); }
 .toggle:hover { border-color: var(--accent); }
 .toggle .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--copper); margin-right: 8px; }
 .right { display: flex; align-items: center; gap: 18px; }
-@media (max-width: 620px) { nav { display: none; } }
+img, svg, video { max-width: 100%; }
+@media (max-width: 900px) {
+  .wrap { max-width: 760px; }
+  .hero { padding-block: 48px 28px; }
+  .contact-link { width: 28px; height: 28px; }
+}
+@media (max-width: 620px) {
+  nav { display: none; }
+  .wrap { padding-left: 14px; padding-right: 14px; }
+  header.bar .wrap {
+    flex-direction: column; align-items: flex-start;
+    gap: 10px;
+  }
+  .right { width: 100%; justify-content: space-between; }
+  .hero { padding-block: 36px 24px; }
+  h1 { font-size: clamp(2rem, 12vw, 3rem); }
+  .lede { font-size: 1rem; }
+  th, td { padding-right: 10px; }
+  td.k { white-space: normal; width: auto; }
+  table { min-width: 560px; }
+  .contact-links { gap: 8px; }
+  .contact-link { width: 26px; height: 26px; padding: 5px; }
+}
 
 .hero { padding-block: 56px 40px; display: grid; gap: 28px; }
 .refdes { font-family: var(--font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--copper); }
